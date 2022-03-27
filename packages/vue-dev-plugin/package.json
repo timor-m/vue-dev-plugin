@@ -1,0 +1,33 @@
+{
+  "name": "vue-dev-plugin",
+  "version": "0.0.4",
+  "description": "support vue debug tools.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vue",
+    "dev",
+    "webpack",
+    "launch-editor"
+  ],
+  "repository": {
+    "url": "https://github.com/timor-m/vue-dev-plugin.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "timor-m",
+    "email": "timor-m@foxmail.com"
+  },
+  "files": [
+    "index.js",
+    "README.md"
+  ],
+  "dependencies": {
+    "vue-dev-overlay": "^0.0.3",
+    "vue-dev-shared": "^0.0.3",
+    "vue-dev-webpack-loader": "^0.0.3",
+    "vue-dev-webpack-plugin": "^0.0.3"
+  }
+}

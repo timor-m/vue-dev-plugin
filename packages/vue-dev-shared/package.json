@@ -1,0 +1,37 @@
+{
+  "name": "vue-dev-shared",
+  "version": "0.0.3",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "author": {
+    "name": "timor-m",
+    "email": "timor-m@foxmail.com"
+  },
+  "repository": {
+    "url": "https://github.com/timor-m/vue-dev-plugin.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "files": [
+    "lib",
+    "utils",
+    "controller",
+    "package.json",
+    "index.js"
+  ],
+  "dependencies": {
+    "@vue/compiler-sfc": "^3.2.31",
+    "chalk": "4.1.2",
+    "express": "^4.17.3",
+    "magic-string": "^0.26.1",
+    "portfinder": "^1.0.28",
+    "shell-quote": "^1.7.3",
+    "vue-dev-overlay": "^0.0.3"
+  }
+}

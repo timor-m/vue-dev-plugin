@@ -1,0 +1,23 @@
+{
+  "name": "vue-dev-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc",
+    "example": "example"
+  },
+  "repository": {
+    "url": "https://github.com/timor-m/vue-dev-plugin.git"
+  },
+  "scripts": {
+    "dev": "cd example && npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "author": {
+    "name": "timor-m",
+    "email": "timor-m@foxmail.com"
+  }
+}

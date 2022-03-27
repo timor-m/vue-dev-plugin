@@ -1,0 +1,30 @@
+{
+  "name": "vue-dev-webpack-plugin",
+  "version": "0.0.3",
+  "description": "used at vue-dev-plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vue",
+    "webpack-plugin"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "timor-m",
+    "email": "timor-m@foxmail.com"
+  },
+  "repository": {
+    "url": "https://github.com/timor-m/vue-dev-plugin.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "files": [
+    "*"
+  ],
+  "dependencies": {
+    "vue-dev-shared": "^0.0.3"
+  }
+}

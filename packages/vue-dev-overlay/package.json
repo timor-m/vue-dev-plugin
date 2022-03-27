@@ -1,0 +1,48 @@
+{
+  "name": "vue-dev-overlay",
+  "version": "0.0.3",
+  "description": "used at vue-dev-plugin",
+  "main": "index.js",
+  "scripts": {
+    "generator": "cd script && node build.js",
+    "dev": "vue-cli-service serve",
+    "build": "vue-cli-service build --target app && npm run generator",
+    "lint": "vue-cli-service lint --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vue",
+    "vue-dev-plugin",
+    "overlay"
+  ],
+  "repository": {
+    "url": "https://github.com/timor-m/vue-dev-plugin.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "timor-m",
+    "email": "timor-m@foxmail.com"
+  },
+  "files": [
+    "index.js",
+    "package.json",
+    "README.md"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "core-js": "^3.8.3",
+    "eslint": "^8.12.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "less": "^4.1.2",
+    "less-loader": "5.0.0",
+    "vue": "^2.6.14",
+    "vue-template-compiler": "^2.6.14"
+  }
+}
