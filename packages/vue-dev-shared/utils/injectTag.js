@@ -1,3 +1,5 @@
+const TEMPLATE_DATA = require("./templateData")
+
 const replaceTemplate = (content, data) => {
   let newContent = content
   for(const key in data) {
@@ -5,6 +7,16 @@ const replaceTemplate = (content, data) => {
   }
   return newContent
 }
+
+const injectContent = (source, assets, data) => {
+  for (const key in assets) {
+    const { content, container } = assets[key];
+    let newContent = replaceTemplate(content, data)
+    source = injectTag(newContent, source, container);
+  }
+
+  return source;
+};
 
 const injectTag = (content, source, container = "body") => {
     const endTagReg = new RegExp(`</${container}>`);
@@ -16,5 +28,6 @@ const injectTag = (content, source, container = "body") => {
 
   module.exports = {
     replaceTemplate,
-    injectTag
+    injectTag,
+    injectContent
   }

@@ -1,4 +1,4 @@
-const { parse, MagicString } = require('vue-dev-shared')
+const { parse, MagicString, injectAttr } = require('vue-dev-shared')
 
 const inject2Tag = (node, source, filename) => {
     if(node.children && node.children.length) {
@@ -12,7 +12,7 @@ const inject2Tag = (node, source, filename) => {
         const { line , column } = node.loc.start
         const currIndex = line - 1
         const s = new MagicString(codeTextArr[currIndex])
-        s.prependLeft(node.tag.length + column , ` data-injector data-injector-file="${filename}" data-injector-line="${line}" data-injector-column="${column}"
+        s.prependLeft(node.tag.length + column , ` ${injectAttr['base']} ${injectAttr['file']}="${filename}" ${injectAttr['line']}="${line}" ${injectAttr['column']}="${column}"
         `)
         codeTextArr[currIndex] = s.toString()
         source = codeTextArr.join('\n')

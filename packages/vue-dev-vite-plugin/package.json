@@ -21,5 +21,9 @@
   },
   "files": [
     "index.js"
-  ]
+  ],
+  "dependencies": {
+    "@vue/compiler-dom": "^3.2.31",
+    "vue-dev-shared": "^0.0.1"
+  }
 }

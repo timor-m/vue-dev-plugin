@@ -5,8 +5,12 @@ const TEMPLATE_DATA = require("../utils/templateData")
 
 const launchEditorController = (req, res) => {
     const { file, line, column } = req.query
-    launchEditor(file, +line, +column)
-    res.end('ok')
+    if(!file) {
+        res.end('faild')
+    } else {
+        launchEditor(file, +line, +column)
+        res.end('ok')
+    }
 }
 
 const fetchStaticController = (req, res) => {

@@ -1,6 +1,4 @@
-
-// overlay dev 
-const IS_DEV = false
+const { IS_DEV } = require("../config")
 
 const injectAssets = [
   {

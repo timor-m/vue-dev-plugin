@@ -1,7 +1,9 @@
 const { express, portfinder,TEMPLATE_DATA, launchEditorController, fetchStaticController } = require("vue-dev-shared")
+
 const app = express()
 
 let serverLocked = false
+
 const start =  (port, cb) => {
     app.all('*', function(req, res, next) {
         res.setHeader('Access-Control-Allow-Origin','*');

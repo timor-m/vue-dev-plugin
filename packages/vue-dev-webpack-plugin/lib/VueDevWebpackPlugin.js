@@ -1,16 +1,5 @@
 const start = require("./Server");
-const { TEMPLATE_DATA, injectAssets, injectTag, replaceTemplate } = require("vue-dev-shared")
-
-const injectContent = (source, assets) => {
-  for (const key in assets) {
-    const { content, container } = assets[key];
-    let newContent = replaceTemplate(content, TEMPLATE_DATA)
-    source = injectTag(newContent, source, container);
-  }
-
-  return source;
-};
-
+const { TEMPLATE_DATA, injectAssets, injectContent } = require("vue-dev-shared")
 class VueDevWebpackPlugin {
   apply(compiler) {
     compiler.hooks.compilation.tap("VueDevWebpackPlugin", (compilation) => {
@@ -21,7 +10,7 @@ class VueDevWebpackPlugin {
           compilation.hooks.htmlWebpackPluginAfterHtmlProcessing.tap(
             "HtmlWebpackPlugin",
             (data) => {
-              data.html = injectContent(data.html, injectAssets);
+              data.html = injectContent(data.html, injectAssets, TEMPLATE_DATA);
             }
           );
         }
@@ -35,7 +24,8 @@ class VueDevWebpackPlugin {
               additionalAssets: (assets) => {
                 const htmlStr = injectContent(
                   assets["index.html"].source(),
-                  injectAssets
+                  injectAssets,
+                  TEMPLATE_DATA
                 );
                 compilation.updateAsset("index.html", {
                   size: htmlStr.length,
