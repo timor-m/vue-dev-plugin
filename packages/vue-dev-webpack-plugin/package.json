@@ -1,6 +1,6 @@
 {
   "name": "vue-dev-webpack-plugin",
-  "version": "0.0.3",
+  "version": "0.0.1",
   "description": "used at vue-dev-plugin",
   "main": "index.js",
   "scripts": {
@@ -25,6 +25,6 @@
     "*"
   ],
   "dependencies": {
-    "vue-dev-shared": "^0.0.3"
+    "vue-dev-shared": "^0.0.1"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "vue-dev-shared",
-  "version": "0.0.3",
+  "version": "0.0.1",
   "description": "",
   "main": "index.ts",
   "scripts": {
@@ -32,6 +32,6 @@
     "magic-string": "^0.26.1",
     "portfinder": "^1.0.28",
     "shell-quote": "^1.7.3",
-    "vue-dev-overlay": "^0.0.3"
+    "vue-dev-overlay": "^0.0.1"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "example",
-  "version": "0.0.4",
+  "version": "0.0.1",
   "private": true,
   "author": {
     "name": "timor-m",
@@ -23,8 +23,8 @@
     "@vue/cli-service": "~5.0.0",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
-    "vue-dev-plugin": "^0.0.4",
-    "vue-dev-webpack-loader": "^0.0.3",
+    "vue-dev-plugin": "^0.0.1",
+    "vue-dev-webpack-loader": "^0.0.1",
     "vue-template-compiler": "^2.6.14"
   },
   "eslintConfig": {
