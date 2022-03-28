@@ -1,5 +1,6 @@
 const VueDevWebpackLoader = require("vue-dev-webpack-loader")
 const { VueDevWebpackPlugin } = require("vue-dev-webpack-plugin")
+const { ViteDevPlugin } = require("vue-dev-vite-plugin")
 
 const useVueDevPlugin = function (config) {
     config.module.rule('vue')
@@ -13,5 +14,6 @@ const useVueDevPlugin = function (config) {
 module.exports = {
     VueDevWebpackPlugin,
     VueDevWebpackLoader,
-    useVueDevPlugin
+    useVueDevPlugin,
+    ViteDevPlugin
 }

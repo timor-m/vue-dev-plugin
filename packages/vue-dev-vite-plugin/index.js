@@ -2,7 +2,7 @@ const transform = require("./lib/transform")
 const useMiddleware = require("./lib/useMiddleware") 
 const transformIndexHtml = require("./lib/transformIndexHtml")
 
-const viteDevPlugin = () => {
+const ViteDevPlugin = () => {
     return {
         name: 'vue-dev-vite-plugin',
         enfore: 'pre',
@@ -13,4 +13,4 @@ const viteDevPlugin = () => {
     }
 }
 
-module.exports = viteDevPlugin
+module.exports = ViteDevPlugin
