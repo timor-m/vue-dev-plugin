@@ -1,6 +1,6 @@
-import transform from "./lib/transform"
-import useMiddleware from "./lib/useMiddleware"
-import transformIndexHtml from "./lib/transformIndexHtml"
+const transform = require("./lib/transform") 
+const useMiddleware = require("./lib/useMiddleware") 
+const transformIndexHtml = require("./lib/transformIndexHtml")
 
 const viteDevPlugin = () => {
     return {
@@ -13,4 +13,4 @@ const viteDevPlugin = () => {
     }
 }
 
-export default viteDevPlugin
+module.exports = viteDevPlugin

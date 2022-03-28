@@ -2,8 +2,9 @@ const { TEMPLATE_DATA, injectAssets, injectContent } = require("vue-dev-shared")
 
 const transformIndexHtml = (html) => {
     return {
-        html: injectContent(html, injectAssets, TEMPLATE_DATA)
+        html: injectContent(html, injectAssets, TEMPLATE_DATA),
+        tags: []
     }
 }
 
-export default transformIndexHtml
+module.exports = transformIndexHtml

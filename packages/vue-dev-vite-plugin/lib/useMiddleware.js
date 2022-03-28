@@ -18,4 +18,4 @@ const useMiddleware = (server) => {
     })
 }
 
-export default useMiddleware
+module.exports = useMiddleware

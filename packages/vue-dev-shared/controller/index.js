@@ -14,6 +14,9 @@ const launchEditorController = (req, res) => {
 }
 
 const fetchStaticController = (req, res) => {
+    if(req.socket.localPort) {
+        TEMPLATE_DATA.__HTTP_PORT__ = req.socket.localPort
+    }
     const fileMaps = {
         "script.js" : "script",
         "style.css" : "style"

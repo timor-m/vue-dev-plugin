@@ -1,4 +1,4 @@
-import compiler from "./compiler"
+const compiler = require("./compiler")
 
 const transform = (code, id) => {
     const [filename] = id.split("?", 2)
@@ -21,4 +21,4 @@ const transform = (code, id) => {
     return code
 }
 
-export default transform
+module.exports =  transform

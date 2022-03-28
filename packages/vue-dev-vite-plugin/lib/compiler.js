@@ -1,5 +1,5 @@
 const { MagicString, injectAttr } = require("vue-dev-shared")
-import { parse, transform } from "@vue/compiler-dom"
+const { parse, transform } = require("@vue/compiler-dom")
 
 async function compiler (code, id) {
     const s = new MagicString(code)
@@ -28,4 +28,4 @@ async function compiler (code, id) {
     return result
 }
 
-export default compiler
+module.exports = compiler
