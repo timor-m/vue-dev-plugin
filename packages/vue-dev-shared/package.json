@@ -1,12 +1,15 @@
 {
   "name": "vue-dev-shared",
-  "version": "0.0.1",
-  "description": "",
-  "main": "index.ts",
+  "version": "0.0.6",
+  "description": "used at vue-dev-plugin",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "vue",
+    "vue-dev-plugin"
+  ],
   "license": "MIT",
   "author": {
     "name": "timor-m",
@@ -21,6 +24,7 @@
   "files": [
     "lib",
     "utils",
+    "config",
     "controller",
     "package.json",
     "index.js"
@@ -32,6 +36,6 @@
     "magic-string": "^0.26.1",
     "portfinder": "^1.0.28",
     "shell-quote": "^1.7.3",
-    "vue-dev-overlay": "^0.0.1"
+    "vue-dev-overlay": "^0.0.6"
   }
 }

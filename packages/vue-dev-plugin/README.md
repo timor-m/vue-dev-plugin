@@ -1,6 +1,6 @@
 ## vue-dev-plugin
 
-
+![demo](https://github.com/timor-m/vue-dev-plugin/blob/master/docs/demo.gif)
 
 ## 📖 Introduction
 

@@ -1,13 +1,17 @@
 {
   "name": "vue-dev-vite-plugin",
-  "version": "0.0.1",
-  "description": "",
-  "private": true,
+  "version": "0.0.6",
+  "description": "vite dev plugin",
+  "private": false,
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "vite",
+    "vite-plugin",
+    "vue"
+  ],
   "license": "MIT",
   "author": {
     "name": "timor-m",
@@ -20,6 +24,9 @@
     "registry": "https://registry.npmjs.org/"
   },
   "files": [
+    "lib",
+    "package.json",
+    "README.md",
     "index.js"
   ],
   "dependencies": {
