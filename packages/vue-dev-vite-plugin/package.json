@@ -1,6 +1,6 @@
 {
   "name": "vue-dev-vite-plugin",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "vite dev plugin",
   "private": false,
   "main": "index.js",

@@ -21,7 +21,7 @@ const start =  (port, cb) => {
             !serverLocked && app.listen(port, () => {
                 serverLocked = true
                 TEMPLATE_DATA.__HTTP_PORT__ = port
-                cb(port)
+                cb && cb(port)
             })
         }
     })

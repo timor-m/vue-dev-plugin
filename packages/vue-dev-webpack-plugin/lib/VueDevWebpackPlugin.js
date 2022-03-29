@@ -3,8 +3,7 @@ const { TEMPLATE_DATA, injectAssets, injectContent } = require("vue-dev-shared")
 class VueDevWebpackPlugin {
   apply(compiler) {
     compiler.hooks.compilation.tap("VueDevWebpackPlugin", (compilation) => {
-      start(TEMPLATE_DATA.__HTTP_PORT__, (port) => {
-        TEMPLATE_DATA.__HTTP_PORT__ = port
+        start(TEMPLATE_DATA.__HTTP_PORT__);
         // webpack 4
         if (compilation.hooks.htmlWebpackPluginAfterHtmlProcessing) {
           compilation.hooks.htmlWebpackPluginAfterHtmlProcessing.tap(
@@ -36,7 +35,7 @@ class VueDevWebpackPlugin {
             () => {}
            );
         }
-      });
+      
     });
   }
 }

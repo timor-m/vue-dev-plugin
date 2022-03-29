@@ -5,7 +5,7 @@ const transformIndexHtml = require("./lib/transformIndexHtml")
 const ViteDevPlugin = () => {
     return {
         name: 'vue-dev-vite-plugin',
-        enfore: 'pre',
+        enforce: 'pre',
         apply: 'serve',
         transform,
         configureServer: useMiddleware,

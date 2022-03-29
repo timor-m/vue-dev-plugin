@@ -1,6 +1,6 @@
 {
   "name": "vue-dev-webpack-loader",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "used at vue-dev-plugin",
   "main": "index.js",
   "scripts": {

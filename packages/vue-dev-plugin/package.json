@@ -1,6 +1,6 @@
 {
   "name": "vue-dev-plugin",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "support vue debug tools.",
   "main": "index.js",
   "scripts": {

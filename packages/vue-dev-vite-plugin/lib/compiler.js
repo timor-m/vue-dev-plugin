@@ -1,5 +1,6 @@
 const { MagicString, injectAttr } = require("vue-dev-shared")
 const { parse, transform } = require("@vue/compiler-dom")
+const excludeTags = ["template", "script", "style"]
 
 async function compiler (code, id) {
     const s = new MagicString(code)
