@@ -1,5 +1,5 @@
 // overlay dev mode
-const IS_DEV = true
+const IS_DEV = false
 
 /**
  * inject element attr mapping

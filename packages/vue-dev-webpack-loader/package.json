@@ -27,6 +27,6 @@
     "README.md"
   ],
   "dependencies": {
-    "vue-dev-shared": "^0.0.1"
+    "vue-dev-shared": "^0.0.7"
   }
 }
