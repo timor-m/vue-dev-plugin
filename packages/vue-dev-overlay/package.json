@@ -1,6 +1,6 @@
 {
   "name": "vue-dev-overlay",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "used at vue-dev-plugin",
   "main": "index.js",
   "scripts": {
