@@ -27,22 +27,7 @@ npm install vue-dev-vite-plugin -D
 ### Configuration
 
 ```ts
-// for vue2
-
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
-import ViteDevPlugin from 'vue-dev-vite-plugin'
-
-// https://vitejs.dev/config/
-export default defineConfig({
-  // [warning]It is only recommended to use in the development environment
-  plugins: [vue(), ViteDevPlugin()],
-})
-
-```
-
-```ts
-// for vue3
+// for vite
 
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'

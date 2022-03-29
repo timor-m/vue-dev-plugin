@@ -6,9 +6,16 @@
 
 A vue plugin which provides the ability that to jump to the local IDE when you click the element of browser automatically. It supports Vue2 & 3. 
 
-#### webpack version  support :  webpack4 , webpack5 
 
-#### vite: will support
+
+## 🌈Supports: 
+
+| name    | version | support |      |
+| ------- | ------- | ------- | ---- |
+| webpack | 4       | ✅       |      |
+| webpack | 5       | ✅       |      |
+| vite    | latest     | ✅       |      |
+
 
 ## 📦 Installation
 
@@ -27,8 +34,9 @@ npm install vue-dev-plugin -D
 
 ### Configuration Webpack
 
+
 ```ts
-// for vue2
+// for webpack (4，5)
 
 const { defineConfig } = require('@vue/cli-service')
 const { useVueDevPlugin } = require('vue-dev-plugin')
@@ -45,21 +53,18 @@ module.exports = defineConfig({
 })
 
 ```
-
+### Configuration Vite
 ```ts
-// for vue3
+// for vite
 
-const { defineConfig } = require('@vue/cli-service')
-const { useVueDevPlugin } = require('vue-dev-plugin')
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
+import  { ViteDevPlugin } from 'vue-dev-plugin'
 
-module.exports = defineConfig({
-  transpileDependencies: true,
-  chainWebpack:(config) => {
- // [warning]It is only recommended to use in the development environment
-   if(process.env.NODE_ENV === 'development') {
-       useVueDevPlugin(config)
-   } 
-  }
+// https://vitejs.dev/config/
+export default defineConfig({
+  // [warning]It is only recommended to use in the development environment
+  plugins: [vue(), ViteDevPlugin()],
 })
 
 ```
@@ -119,8 +124,13 @@ export VUE_EDITOR=vim
 
 - It only work in develop mode .
 - It does not currently support `SSR` and `Template Engine (e.g. pug)` .
-
 ## 🤖️ Analysis of Theory
+
+
+
+##  ✈️Future
+
+###Some good ideas are welcome.
 
 
 
