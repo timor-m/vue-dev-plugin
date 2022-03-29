@@ -10,11 +10,11 @@ A vue plugin which provides the ability that to jump to the local IDE when you c
 
 ## 🌈Supports: 
 
-| name    | version | support |      |
-| ------- | ------- | ------- | ---- |
-| webpack | 4       | ✅       |      |
-| webpack | 5       | ✅       |      |
-| vite    | latest     | ✅       |      |
+| name    | version | support |
+| ------- | ------- | ------- |
+| webpack | 4       | ✅       |
+| webpack | 5       | ✅       |
+| vite    | latest     | ✅       |
 
 
 ## 📦 Installation
@@ -130,7 +130,7 @@ export VUE_EDITOR=vim
 
 ##  ✈️Future
 
-###Some good ideas are welcome.
+### Some good ideas are welcome.
 
 
 
