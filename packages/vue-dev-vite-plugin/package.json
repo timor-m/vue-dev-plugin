@@ -1,6 +1,6 @@
 {
   "name": "vue-dev-vite-plugin",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "vite dev plugin",
   "private": false,
   "main": "index.js",
@@ -31,6 +31,6 @@
   ],
   "dependencies": {
     "@vue/compiler-dom": "^3.2.31",
-    "vue-dev-shared": "^0.0.8"
+    "vue-dev-shared": "^0.0.9"
   }
 }
