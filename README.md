@@ -1,4 +1,6 @@
-## vue-dev-plugin
+## 										vue-dev-plugin
+
+​						                            [English](https://github.com/timor-m/vue-dev-plugin/blob/master/README.md)  |  [简体中文](https://github.com/timor-m/vue-dev-plugin/blob/master/README.zh-cn.md)
 
 ![demo](https://github.com/timor-m/vue-dev-plugin/blob/master/docs/demo.gif)
 
