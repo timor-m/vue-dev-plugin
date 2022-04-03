@@ -1,6 +1,6 @@
 {
   "name": "vue-dev-plugin",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "support vue debug tools.",
   "main": "index.js",
   "scripts": {
@@ -25,10 +25,10 @@
     "README.md"
   ],
   "dependencies": {
-    "vue-dev-overlay": "^0.0.9",
-    "vue-dev-shared": "^0.0.9",
-    "vue-dev-vite-plugin": "^0.0.9",
-    "vue-dev-webpack-loader": "^0.0.9",
-    "vue-dev-webpack-plugin": "^0.0.9"
+    "vue-dev-overlay": "^0.0.10",
+    "vue-dev-shared": "^0.0.10",
+    "vue-dev-vite-plugin": "^0.0.10",
+    "vue-dev-webpack-loader": "^0.0.10",
+    "vue-dev-webpack-plugin": "^0.0.10"
   }
 }
