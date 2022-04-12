@@ -13,14 +13,18 @@
       {{ `${size.w} x ${size.h}` }}
     </div>
   </div>
+  <OverlayTag />
   </div>
 </template>
 
 <script>
-
+import OverlayTag from './components/Tag.vue'
 export default {
   name: 'OverlayContanier',
-  data(){
+  components: {
+    OverlayTag
+  },
+  data () {
     return {
         style: {
           w: 0,
@@ -44,7 +48,6 @@ export default {
         }
     }
   },
-  components: {},
   watch:{
     'style.x': function () {
        this.fixMetaStyle()
